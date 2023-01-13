@@ -20,10 +20,3 @@ function addTask() {
     addTask();
   });
   
-  gapi.load('auth2', function() {
-    gapi.auth2.init({
-      client_id: 'your_client_id',
-    }).then(() => {
-      gapi.signin2.render('g-signin2');
-    });
-  });
