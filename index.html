@@ -1,45 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang= "en">
+
 <head>
-    <title>To-Do List</title>
-
-    <title>Google Sign-In Example</title>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
-
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>To-Do List</h1>
-    <form>
-        <input type="text" id="task" placeholder="Add a new task">
-        <button type="submit">Add</button>
-    </form>
-    <ul id="task-list"></ul>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class ="logo">Ryan's Website</h2>
 
-    <script src="todo.js"></script>
+            </div>
 
-    <div class="g-signin2" data-onsuccess="onSignIn"></div>
-    <br>
-    <div id="account-info" style="display: none;"></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="todolist.html">To Do List</a></li>
+                    
+                   
+                </ul>
+            </div>
 
-    <script>
-      function onSignIn(googleUser) {
-        // Get the user's ID token and basic profile information
-        var id_token = googleUser.getAuthResponse().id_token;
-        var profile = googleUser.getBasicProfile();
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To Search">
+                <a href="#"><button class="btn">Search</button></a>
+            </div>
+
+
+        </div>
+
         
-        // Send the ID token to your server to verify the user's identity
-        // and complete the login process
-        // ...
-  
-        // Display the user's account information
-        var accountInfo = document.getElementById("account-info");
-        accountInfo.innerHTML = "Name: " + profile.getName() + "<br>";
-        accountInfo.innerHTML += "Email: " + profile.getEmail() + "<br>";
-        accountInfo.style.display = "block";
-      }
-    </script>
-    
-</body>
-</html>
 
+        <br>
+
+        <div class="content">
+            
+
+            <h1><br> Welcome to My Website</spanDevelopment></br></h1>
+            <br> <br>
+            <p class="par">
+                If You hover your mouse 
+                <br><br>
+                over this it will light up
+            </p>
+
+            <br><br>
+            <p class="link"> <a href="todolist.html">Check out my first javascript application</a></p>
+            <br>
+            
+        </div>
+
+    </div>
+</body>
+
+</html>
